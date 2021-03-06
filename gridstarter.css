@@ -4,7 +4,6 @@ body {
 }
 h1 {
 	color: #f5f5f5;
-	
 	font-size: 40px;
 	background-color: rgba(0,0,0,0.15);
 	padding: 15px 0;
@@ -16,8 +15,9 @@ h2 {
 }
 p {
 	color: #555;
-	font-size: 17px;
+	font-size:small;
 	line-height: 1.4;
+
 }
 
 a {
@@ -44,23 +44,34 @@ ul > li {
 }
 
 /* Structure */
+
+.move{
+	width:100%;
+	
+	
+}
+
 article {
 
-	margin: 0 auto;
-   display:flex;
-   flex-wrap: wrap;
+   margin: 0 auto;
+   display:grid;
+   grid-template-columns: repeat(auto-fill,minmax(19rem,1fr));
+   grid-gap:4rem;
+   
+  
 }
 
 section {
 
-	width: 250px;
+	width: 90%;
 	height: 450px;
 	padding: 30px 20px;
 	margin: 20px 10px;
 	border: 5px solid #409fff;
 	background-color: #f5f5f5;
 	box-shadow: 0 30px 40px -20px rgba(0,0,0,0.3);
-    flex:auto;
+	padding:10px;
+    
 }
 
 section.wide {
@@ -71,24 +82,23 @@ section.wide {
 
 section.wide h2{
 	width: 300px;
+	
 }
 
 section h2 {
 	/*position: absolute;*/
-	display: flex;
 	height: 48px;
 	line-height: 38px;
 	width: 100%;
-	margin-top: 300px;
+	top: -24px;
 	left: 50%;
 	margin: 0;
 	padding: 0;
 	/*transform: translateX(-50%);*/
 	background-color: #f5f5f5;
 	border: 5px solid #409fff;
-	/*text-align: center;*/
-	align-items: center;
-	/*border-width: 100%;*/
+	
+	
 }
 
 span {
@@ -108,9 +118,6 @@ figure {
 	line-height: 100px;
 	
 }
-
-
-
 
 
 
